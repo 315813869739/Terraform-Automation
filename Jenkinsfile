@@ -20,9 +20,6 @@ pipeline {
             }
         }
         
-        
-        
-       
         stage ("Action") {
             steps {
                 echo "Terraform action is --> ${action}"
