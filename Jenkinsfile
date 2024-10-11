@@ -14,6 +14,14 @@ pipeline {
             }
         }
         
+        stage ("terraform plan") {
+            steps {
+                sh ("terraform plan") 
+            }
+        }
+        
+        
+        
        
         stage ("Action") {
             steps {
